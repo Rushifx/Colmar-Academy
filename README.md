@@ -9,7 +9,7 @@
     git add README.md
     git commit -m "first commit"
     git branch -M main
-    git remote add origin https://github.com/thinktinker/colmaracademy.git
+    git remote add origin (https://github.com/Rushifx/Colmar-Academy.git)
     git remote -v
     git push -u origin main
 
@@ -19,7 +19,7 @@
 
     ```bash
     
-    git remote set-url origin https://github.com/thinktinker/colmaracademy.git
+    git remote set-url origin (https://github.com/Rushifx/Colmar-Academy.git)
     git remote -v
     git push
 
