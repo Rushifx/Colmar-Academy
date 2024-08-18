@@ -428,6 +428,11 @@ html, body
     color: #767676;
 }
 
+.thesis-event-block h3
+{
+    margin: 4rem 0;
+}
+
 .thesis-event-block:first-child
 {
 	background-color:#cecbcb;
