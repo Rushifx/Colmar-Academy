@@ -261,10 +261,73 @@ html, body
 
 /* start learning section */
 
+.learning
+{
+    grid-column: full--start / full--end;
+    height: auto;
+    background-color: #eaebec;
+}
+
+.learning h2
+{
+    display: flex;
+    padding: 2rem 0 0 0;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: #4A4A4A;
+}
+
 .learning img
 {
+    display: block;
     width: 100%;
     height: auto;
+}
+
+.learning-container
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1rem;
+    margin: 2rem 4.5rem;
+}
+
+.learning-block
+{
+    background-color: #fff;
+}
+
+.learning-block h4, .learning-block p, .learning-block .capitalize
+{
+    padding: 0 1rem;
+}
+
+.learning-block p
+{
+    font-weight: 100;
+    font-size: small;
+    color: #767676;
+}
+
+.learning-block .capitalize
+{
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+}
+
+.learning-block h4
+{
+    color: #4A4A4A;
+    padding: 1rem;
+/*     white-space: nowrap; */
+}
+
+.learning-block p:last-child
+{
+    padding-bottom: 1.5rem;
 }
 
 /* end of learning section */
@@ -335,6 +398,11 @@ footer a:hover
 {
     display: none;
 }
+
+.learning-mobile
+{
+    display: none;
+}
 /* if width of screen is 640px or less */
 @media screen and (max-width: 40rem) 
 {
@@ -356,7 +424,7 @@ footer a:hover
         flex-direction: column;
         height: 100%;
     }
-
+    /* start of mobile header */
     .header-picture img
     {
         padding: 0;
@@ -367,7 +435,6 @@ footer a:hover
     .header-content
     {
         display: flex;
-/*         grid-column: full--start / full--end; */
         flex-direction: column;
         flex-grow: 1;
         padding: 2rem 1rem 2rem 1rem;
@@ -414,7 +481,8 @@ footer a:hover
         text-decoration: none;
         background-color: #484848;
     }
-
+    /* end of mobile header */
+    /* start of mobile practice */
     .practice
     {
         display: none;
@@ -447,6 +515,48 @@ footer a:hover
         margin: 0;
     }
 
+    .event-block:last-child
+{
+	background-color: #fff;
+}
+    /* end of mobile practice */
+    /* start of learning */
+    .learning-container
+    {
+        display: none;
+    }
+
+    .learning-mobile
+    {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        font-size: large;
+    }
+
+    .learning h2 
+    {
+        background-color: #fff;
+        padding-bottom: 1rem;
+    }
+
+    .learning-mobile ul 
+    {
+        list-style-type: none;
+        margin: 0 1rem 0 1rem;
+    }
+
+    .learning-mobile ul li 
+    {
+        padding: 1rem 0 1.5rem 1rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-top: 0.5rem;
+        background-color: #D8D8D8;
+    }
+    /* end of learning */
+    /* start of mobile footer */
+
     footer a 
     {
         display: none;
@@ -462,7 +572,7 @@ footer a:hover
     {
         font-size: medium;
     }
-
+    /* end of mobile footer  */
 }
 /** ********************* **/
 /* end of mobile section */
