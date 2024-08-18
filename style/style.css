@@ -312,6 +312,11 @@ html, body
     color: #767676;
 }
 
+.learning-block a
+{
+    text-decoration: none;
+}
+
 .learning-block .capitalize
 {
     text-transform: uppercase;
@@ -331,6 +336,104 @@ html, body
 }
 
 /* end of learning section */
+
+/* start of thesis section */
+.thesis
+{
+    grid-column: full--start / full--end;
+    padding: 2rem 1.5rem;
+}
+
+.thesis h2
+{
+    display: flex;
+    padding: 0 0 2rem 0;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 900;
+    color: #4A4A4A;
+}
+
+.thesis-container
+{
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+}
+
+.thesis-left
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 1.5rem;
+}
+
+
+.thesis-left video
+{
+    width: 100%;
+}
+
+.thesis-left h3
+{
+    padding: 1.5rem 0 0.5rem 0;
+    color: #484848;
+}
+
+.thesis-left p
+{
+    font-size: small;
+    color: #767676;
+}
+
+.thesis-right
+{
+    display: grid;
+    grid-template-rows: repeat( 3 / 1fr);
+    grid-column: 0.4fr 0.6fr;
+}
+
+.thesis-event-block
+{
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+    align-items: center;
+    font-size: small;
+}
+
+.thesis-event-block img
+{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+
+.thesis-event-block-content
+{
+    margin: 1rem;
+}
+
+.thesis-event-block-content h4
+{
+    font-size: 1rem;
+    color: #4A4A4A;
+    padding-left: 1rem;
+}
+     
+.thesis-event-block-content p
+{
+    font-size: 0.8rem;
+    padding: 1rem;
+    color: #767676;
+}
+
+.thesis-event-block:first-child
+{
+	background-color:#cecbcb;
+}
+
+/* end of thesis section */
 
 /* start of footer section */
 footer 
@@ -549,12 +652,48 @@ footer a:hover
     .learning-mobile ul li 
     {
         padding: 1rem 0 1.5rem 1rem;
-        font-size: 1.5rem;
-        font-weight: 500;
         margin-top: 0.5rem;
         background-color: #D8D8D8;
     }
+
+    .learning-mobile ul li:last-child
+    {
+        margin-bottom: 2rem;
+    }
+
+    .learning-mobile ul li a 
+    {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #484848;
+    }
     /* end of learning */
+    /* start of thesis */
+    .thesis h2
+    {
+        border-top: 1px solid #e7e7e7;
+        padding-top: 2rem;
+    }
+
+    .thesis-left h3, .thesis-left p 
+    {
+        display: none;
+    }
+
+    .thesis-right
+    {
+        display: none;
+    }
+    
+    .thesis-left 
+    {
+        padding: 0;
+        grid-column: full--start / full--end;
+        height: auto;
+    }
+
+    /* end of thesis */
     /* start of mobile footer */
 
     footer a 
