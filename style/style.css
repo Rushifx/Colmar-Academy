@@ -386,6 +386,7 @@ html, body
 {
     font-size: small;
     color: #767676;
+    line-height: 1.4;
 }
 
 .thesis-right
@@ -425,7 +426,7 @@ html, body
 .thesis-event-block-content p
 {
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 1rem 1rem 0 1rem;
     color: #767676;
 }
 
